@@ -6,6 +6,7 @@ public class Classwork
     System.out.println(firstLastN("apple" , 2));
     System.out.println(delEnd("library", 5));
     System.out.println(compareLower("Sterling", "Matierial"));
+    System.out.println(lengthFirst( "Everything in its right place"));
   }
 
   public static String firstLastN(String word, int n)
@@ -35,6 +36,17 @@ public class Classwork
     String output = A + "\n" + B + "\n" + "Result : " + difference;
     return output;
   }
+  public static String lengthFirst(String S)
+  {
+    String space = " ";
+    int word = S.indexOf(space);
+    String firstWord = S.substring(0, word);
+    int firstLength = firstWord.length();
+
+    String output = S + "\n" + firstLength;
+    return output;
+  }
+
   // write solutions to problems below
 
 }
